@@ -107,6 +107,12 @@
           <input type="hidden" name="tv" id="tv" th:value="*{tv}"/>
         </tr>
         <tr>
+          <th>ソファーの個数</th>
+          <td><span th:text="*{sofa}"></span></td>
+          <input type="hidden" name="sofa" id="sofa" th:value="*{sofa}"/>
+        </tr>
+        
+        <tr>
           
           <th>洗濯機の設置工事申し込み</th>
           <td><span th:text="*{washingMachineInstallation} ? 'あり' : 'なし'"></span></td>

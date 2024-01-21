@@ -26,6 +26,8 @@ public class UserOrderDto {
 
     private String tv;
 
+    private String sofa;
+
     private boolean washingMachineInstallation;
 
     public String getCustomerName() {
@@ -124,11 +126,19 @@ public class UserOrderDto {
         this.washingMachineInstallation = washingMachineInstallation;
     }
 
-    public int getTV() {
+    public int getTv() {
         return Integer.parseInt(tv);
     }
 
-    public void setTV(String tv) {
+    public void setTv(String tv) {
         this.tv = tv;
+    }
+
+    public int getSofa() {
+        return Integer.parseInt(sofa);
+    }
+
+    public void setSofa(String sofa) {
+        this.sofa = sofa;
     }
 }

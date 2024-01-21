@@ -59,6 +59,10 @@ public class UserOrderForm {
     @NotBlank
     private String tv;
 
+    @Numeric
+    @NotBlank
+    private String sofa;
+
     @NotNull
     private boolean washingMachineInstallation;
 
@@ -168,6 +172,14 @@ public class UserOrderForm {
 
     public void setTv(String tv) {
         this.tv = tv;
+    }
+
+    public String getSofa() {
+        return sofa;
+    }
+
+    public void setSofa(String sofa) {
+        this.sofa = sofa;
     }
 }
 
