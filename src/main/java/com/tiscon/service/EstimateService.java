@@ -61,7 +61,7 @@ public class EstimateService {
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.BICYCLE.getCode(), dto.getBicycle()));
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.WASHING_MACHINE.getCode(), dto.getWashingMachine()));
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.TV.getCode(), dto.getTv()));
-        packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.TV.getCode(), dto.getSofa()));
+        packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.SOFA.getCode(), dto.getSofa()));
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.TABLE.getCode(), dto.getTable()));
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.CHAIR.getCode(), dto.getChair()));
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.TANSU.getCode(), dto.getTansu()));
