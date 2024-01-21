@@ -65,7 +65,7 @@
       <fieldset>
       <div class="sub-title">お荷物情報</div>
         <div class="form-group">
-          <label for="box">段ボールの個数</label>
+          <label for="box">段ボールの個数  <small>(平均)1人当たり15個</small></label>
           <input type="text" id="box" name="box" th:field="*{box}" class="form-control" value="10"/>
         </div>
         <div class="form-group">
@@ -80,6 +80,26 @@
           <label for="washingMachine">洗濯機の個数</label>
           <input type="text" id="washingMachine" name="washingMachine" th:field="*{washingMachine}" class="form-control"
                  value="1"/>
+        </div>
+        <div class="form-group">
+          <label for="bed">テレビの個数</label>
+          <input type="text" id="tv" name="tv" th:field="*{tv}" class="form-control" value="3"/>
+        </div>
+        <div class="form-group">
+          <label for="bed">ソファーの個数</label>
+          <input type="text" id="bed" name="bed" th:field="*{bed}" class="form-control" value="3"/>
+        </div>
+        <div class="form-group">
+          <label for="bed">タンスの個数</label>
+          <input type="text" id="bed" name="bed" th:field="*{bed}" class="form-control" value="3"/>
+        </div>
+        <div class="form-group">
+          <label for="bed">テーブルの個数</label>
+          <input type="text" id="bed" name="bed" th:field="*{bed}" class="form-control" value="3"/>
+        </div>
+        <div class="form-group">
+          <label for="bed">いすの個数</label>
+          <input type="text" id="bed" name="bed" th:field="*{bed}" class="form-control" value="3"/>
         </div>
         <div class="form-group">
           <label for="washingMachineInstallation">洗濯機の設置工事申し込み</label>

@@ -24,6 +24,8 @@ public class UserOrderDto {
 
     private String washingMachine;
 
+    private String tv;
+
     private boolean washingMachineInstallation;
 
     public String getCustomerName() {
@@ -120,5 +122,13 @@ public class UserOrderDto {
 
     public void setWashingMachineInstallation(Boolean washingMachineInstallation) {
         this.washingMachineInstallation = washingMachineInstallation;
+    }
+
+    public int getTV() {
+        return Integer.parseInt(tv);
+    }
+
+    public void setTV(String tv) {
+        this.tv = tv;
     }
 }

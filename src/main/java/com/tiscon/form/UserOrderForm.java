@@ -52,6 +52,10 @@ public class UserOrderForm {
     @NotBlank
     private String washingMachine;
 
+    @Numeric
+    @NotBlank
+    private String tv;
+
     @NotNull
     private boolean washingMachineInstallation;
 
@@ -150,4 +154,13 @@ public class UserOrderForm {
     public void setWashingMachineInstallation(boolean washingMachineInstallation) {
         this.washingMachineInstallation = washingMachineInstallation;
     }
+
+    public String getTv() {
+        return tv;
+    }
+
+    public void setTv(String tv) {
+        this.tv = tv;
+    }
 }
+

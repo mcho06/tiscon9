@@ -60,6 +60,7 @@ public class EstimateService {
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.BED.getCode(), dto.getBed()));
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.BICYCLE.getCode(), dto.getBicycle()));
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.WASHING_MACHINE.getCode(), dto.getWashingMachine()));
+        packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.TV.getCode(), dto.getTV()));
         estimateDAO.batchInsertCustomerPackage(packageList);
     }
 

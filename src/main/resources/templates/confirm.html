@@ -96,7 +96,7 @@
           <col span="2" style="background-color: #FFFFFF;">
           <tbody>
           <tr>
-            <th style="width: 40%">段ボールの個数</th>
+            <th style="width: 40%">段ボールの個数(例)1人暮らし：10個</th>
             <td><span th:text="*{box}"></span></td>
             <input type="hidden" name="box" id="box" th:value="*{box}"/>
           </tr>
@@ -114,6 +114,11 @@
             <th>洗濯機の個数</th>
             <td><span th:text="*{washingMachine}"></span></td>
             <input type="hidden" name="washingMachine" id="washingMachine" th:value="*{washingMachine}"/>
+          </tr>
+          <tr>
+            <th>テレビの個数</th>
+            <td><span th:text="*{tv}"></span></td>
+            <input type="hidden" name="tv" id="tv" th:value="*{tv}"/>
           </tr>
           <tr>
             <th>洗濯機の設置工事申し込み</th>
