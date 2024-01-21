@@ -85,7 +85,7 @@ public class EstimateDao {
     /**
      * 都道府県間の距離を取得する。
      *
-     * @param prefectureIdFrom 引っ越し元の都道府県
+     * @param prefectureIdFrom 引越し元の都道府県
      * @param prefectureIdTo   引越し先の都道府県
      * @return 距離[km]
      */
