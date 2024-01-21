@@ -126,6 +126,16 @@
             <input type="hidden" name="sofa" id="sofa" th:value="*{sofa}"/>
           </tr>
           <tr>
+            <th>テーブルの個数</th>
+            <td><span th:text="*{table}"></span></td>
+            <input type="hidden" name="table" id="table" th:value="*{table}"/>
+          </tr>
+          <tr>
+            <th>イスの個数</th>
+            <td><span th:text="*{chair}"></span></td>
+            <input type="hidden" name="chair" id="chair" th:value="*{chair}"/>
+          </tr>
+          <tr>
             <th>洗濯機の設置工事申し込み</th>
             <td><span th:text="*{washingMachineInstallation} ? 'あり' : 'なし'"></span></td>
             <input type="hidden" name="washingMachineInstallation" id="washingMachineInstallation" th:value="*{washingMachineInstallation}"/>

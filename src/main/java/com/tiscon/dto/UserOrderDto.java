@@ -25,6 +25,10 @@ public class UserOrderDto {
     private String washingMachine;
 
     private String tv;
+    
+    private String table;
+
+    private String chair;
 
     private String sofa;
 
@@ -140,5 +144,22 @@ public class UserOrderDto {
 
     public void setSofa(String sofa) {
         this.sofa = sofa;
+    }
+        
+    public int getTable() {
+        return Integer.parseInt(table);
+    }
+
+    public void setTable(String table) {
+        this.table = table;
+    }
+
+    public int getChair() {
+        return Integer.parseInt(chair);
+    }
+
+    public void setChair(String chair) {
+        this.chair= chair;
+
     }
 }

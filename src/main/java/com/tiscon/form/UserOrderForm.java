@@ -62,6 +62,15 @@ public class UserOrderForm {
     @Numeric
     @NotBlank
     private String sofa;
+    
+    @Numeric
+    @NotBlank
+    private String table;
+
+    @Numeric
+    @NotBlank
+    private String chair;
+
 
     @NotNull
     private boolean washingMachineInstallation;
@@ -173,6 +182,7 @@ public class UserOrderForm {
     public void setTv(String tv) {
         this.tv = tv;
     }
+<<<<<<< Updated upstream
 
     public String getSofa() {
         return sofa;
@@ -180,6 +190,22 @@ public class UserOrderForm {
 
     public void setSofa(String sofa) {
         this.sofa = sofa;
+=======
+    public String getTable() {
+        return table;
+    }
+
+    public void setTable(String table) {
+        this.table = table;
+    }
+
+    public String getChair() {
+        return chair;
+    }
+
+    public void setChair(String chair) {
+        this.chair = chair;
+>>>>>>> Stashed changes
     }
 }
 
