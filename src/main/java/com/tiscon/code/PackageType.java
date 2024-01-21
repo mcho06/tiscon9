@@ -20,11 +20,11 @@ public enum PackageType implements CodeEnum {
     /**ソファー */
     SOFA(6,"ソファー"),
      /**タンス */
-     TANSU(7,"タンス"),
+    TANSU(7,"タンス"),
       /**テーブル */
     TABLE(6,"テーブル"),
      /**いす */
-     CHAIR(6,"いす");
+    CHAIR(6,"いす");
 
 
 

@@ -32,6 +32,8 @@ public class UserOrderDto {
 
     private String sofa;
 
+    private String tansu;
+
     private boolean washingMachineInstallation;
 
     public String getCustomerName() {
@@ -102,8 +104,16 @@ public class UserOrderDto {
         return Integer.parseInt(bed);
     }
 
+    public int getTansu() {
+        return Integer.parseInt(tansu);
+    }
+
     public void setBed(String bed) {
         this.bed = bed;
+    }
+
+    public void setTansu(String tansu) {
+        this.tansu = tansu;
     }
 
     public int getBicycle() {

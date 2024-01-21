@@ -49,6 +49,10 @@ public class UserOrderForm {
 
     @Numeric
     @NotBlank
+    private String tansu;
+
+    @Numeric
+    @NotBlank
     private String bicycle;
 
     @Numeric
@@ -131,7 +135,7 @@ public class UserOrderForm {
         this.newAddress = newAddress;
     }
 
-    public String getmonth(int month){
+    public String getmonth(String month){
         return month;
     }
 
@@ -149,6 +153,14 @@ public class UserOrderForm {
 
     public void setBed(String bed) {
         this.bed = bed;
+    }
+
+    public String getTansu() {
+        return tansu;
+    }
+
+    public void setTansu(String tansu) {
+        this.tansu = tansu;
     }
 
     public String getBicycle() {
@@ -182,7 +194,6 @@ public class UserOrderForm {
     public void setTv(String tv) {
         this.tv = tv;
     }
-<<<<<<< Updated upstream
 
     public String getSofa() {
         return sofa;
@@ -190,7 +201,8 @@ public class UserOrderForm {
 
     public void setSofa(String sofa) {
         this.sofa = sofa;
-=======
+    }
+
     public String getTable() {
         return table;
     }
@@ -205,7 +217,6 @@ public class UserOrderForm {
 
     public void setChair(String chair) {
         this.chair = chair;
->>>>>>> Stashed changes
     }
 }
 

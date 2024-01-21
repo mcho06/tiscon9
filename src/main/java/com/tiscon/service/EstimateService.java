@@ -64,6 +64,7 @@ public class EstimateService {
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.TV.getCode(), dto.getSofa()));
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.TABLE.getCode(), dto.getTable()));
         packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.CHAIR.getCode(), dto.getChair()));
+        packageList.add(new CustomerPackage(customer.getCustomerId(), PackageType.TANSU.getCode(), dto.getTansu()));
         estimateDAO.batchInsertCustomerPackage(packageList);
     }
 
@@ -88,7 +89,9 @@ public class EstimateService {
                 + getBoxForPackage(dto.getTv(), PackageType.TV)
                 + getBoxForPackage(dto.getSofa(), PackageType.SOFA)
                 + getBoxForPackage(dto.getTable(), PackageType.TABLE)
-                + getBoxForPackage(dto.getChair(), PackageType.CHAIR);
+                + getBoxForPackage(dto.getChair(), PackageType.CHAIR)
+                + getBoxForPackage(dto.getWashingMachine(), PackageType.WASHING_MACHINE)
+                + getBoxForPackage(dto.getTansu(), PackageType.TANSU);
 
 
         // 箱に応じてトラックの種類が変わり、それに応じて料金が変わるためトラック料金を算出する。
